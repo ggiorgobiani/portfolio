@@ -1,0 +1,727 @@
+*{
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    color: #c4cfde;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*---------------------------- Header ---------------------------- */
+
+.humb-div{
+    display: none;
+}
+header{
+    height: 100%;
+    width: 281px;
+    padding: 50px 40px;
+    background-color: #212428;
+    position: fixed;
+    box-shadow: rgba(0, 0, 0, 0.15) 3px 3px 4px;
+    display: flex;
+    flex-direction: column;
+}
+.logo-area img{
+    width: 100%;
+    border-radius: 50%;
+}
+.side-nav ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 50px 0 0 0;
+    padding: 0;
+}
+.side-nav i{
+    margin-right: 10px;
+}
+.side-nav a{
+    height: 35px;
+    margin: 5px;
+    display: flex;
+    font-size: 16px;
+    color:  #c4cfde;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.side-nav a:hover{
+    color: #00faed;
+}
+.active{
+    color: #00faed !important;
+}
+.side-footer{
+    width: 100%;
+    height: 120px;
+    margin-top: 15rem;
+    border-top: 1px solid #121415;
+}
+.side-footer p{
+    font-size: 14px;
+    margin: 30px 0 0 0;
+}
+.side-footer ul{
+    width: 100%;
+    list-style: none;
+    margin: 30px 0 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.side-footer a{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bdc4cf;
+    text-decoration: none;
+    background: linear-gradient(to right bottom, #1f2225da, #26292eda);
+    box-shadow: -3px -3px 7px #2b2e3365, 3px 3px 7px #14151860;
+    transition: 0.2s;
+}
+.side-footer a:hover{
+    color:  #00faed;
+    box-shadow: -2px -2px 5px #2b2e3365, 2px 2px 5px #14151860;
+}
+
+/*---------------------------- Main ---------------------------- */
+.main{
+    width: 100% calc(-280px);
+    margin-left: 200px;
+    padding: 0 20px;
+    background-color: #212428;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*---------------------------- About me ----------------------------*/
+.about-section{
+    width: 1300px;
+    height: 850px;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about-section-div{
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-section-div h1{
+    font-size: 44px;
+    margin: 10px 0;
+}
+.about-section-div h3{
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 0;
+}
+.about-section-div a{
+    width: 150px;
+    height: 50px;
+    color: #00faed;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 30px;
+    box-shadow: -4px -4px 7px #2b2e3365, 4px 4px 8px #14151860;
+    transition: 0.1s;
+}
+.about-section-div a:hover{
+    box-shadow: -1px -1px 5px #2b2e3365, 1px 1px 5px #14151860;
+}
+
+/*---------------------------- Knowledge ----------------------------*/
+.knowledge-section{
+    width: 1300px;
+    padding: 150px 0px 200px 0px;
+    border-top: 1px solid #121415;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.knowledge-section h1{
+    font-size: 44px;
+    margin: 10px 0;
+}
+.knowledge-section-div{
+    margin: 50px 0;
+    display: flex;
+    width: 47%;
+    flex-direction: column;
+}
+.knowledge-section-div h3{
+    font-size: 28px;
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+.progress-chart{
+    width: 100%;
+    height: 45px;
+    margin: 25px 0 0 0;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: -3px -3px 4px #2b2e3365, 3px 3px 4px #14151860;
+}
+.progress-chart h6{
+    font-size: 15px;
+    color: #bdc4cf;
+    display: flex;
+}
+
+/*---------------------------- Education ----------------------------*/
+.education-section{
+    width: 1300px;
+    padding: 150px 0px 130px 0px;
+    border-top: 1px solid #121415;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.education-section h1{
+    font-size: 44px;
+    margin: 10px 0;
+}
+.education-section-div{
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+}
+.education-section-formation{
+    text-align: center;
+}
+.education-section-experience{
+    margin-left: 2.5rem;
+}
+.education-section-div ul{
+    margin: 10px;
+    list-style: none;
+}
+.education-section-div li{
+    margin-top: 20px;
+}
+.education-section-left,
+.education-section-right{
+    width: 800px;
+    height: 400px;
+    padding: 30px 0;
+    display: block;
+    flex-direction: column;
+    font-size: larger;
+}
+
+
+/*---------------------------- Contact ----------------------------*/
+.contact-section{
+    width: 1300px;
+    padding: 120px 0 120px 0;
+    border-top: 1px solid  #121415;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-section h1{
+    font-size: 44px;
+    margin: 10px 0;
+}
+.contact-section-div{
+    width: 100%;
+    display: flex;
+}
+.contact-section-div ul{
+    list-style: none; 
+    margin-top: 6rem;
+}
+.contact-section-div li{
+    font-size: 16px;
+    margin: 10px 0;
+}
+.contact-section-div li I{
+    margin-right: 10px;
+}
+.contact-section-div .phone{
+    margin-left: 18px;
+}
+.contact-section-div .mail{
+    margin-left: 40px;
+}
+.contact-section-div .location{
+    margin-left: 20px;
+}
+
+/* ============================================ 1600 px ============================================ */
+
+@media screen and (max-width: 1600px) {
+/* ---------------------------- Header ---------------------------- */
+    header{
+        width: 191px;
+        padding: 30px 30px;
+    }
+    .side-nav ul{
+        margin: 30px 0 0 0;
+    }
+    .side-nav i{
+        margin-right: 10px;
+    }
+    .side-nav a{
+        height: 25px;
+        margin: 5px 0;
+        font-weight: 400;
+    }
+    .side-footer{
+        width: 100%;
+        height: 100px;
+        margin-top: 23rem;
+    }
+    .side-footer p{
+        margin: 20px 0 0 0;
+    }
+    .side-footer ul{
+        margin: 20px 0 0 0;
+    }
+    .side-footer a{
+        width: 35px;
+        height: 35px;
+        border-radius: 4px;
+    }
+
+/*---------------------------- Main ---------------------------- */
+
+    .main{
+        width: 100% calc(-190px);
+        margin-left: 190px;
+    }
+    
+/*---------------------------- About me ----------------------------*/
+    .about-section{
+        width: 740px;
+        height: 450px;
+        padding: 50px 0;
+        display: flex;
+    }
+    .about-section-div{
+        margin: 30px 0;
+    }
+    .about-section-div h1{
+        margin: 6px 0;
+    }
+    .about-section-div h3{
+        margin: 6px 0;
+    }
+    .about-section-div a{
+        width: 110px;
+        height: 35px;
+        border-radius: 4px;
+        margin-top: 25px;
+    }
+    
+/*---------------------------- Knowledge ----------------------------*/
+    .knowledge-section{
+        width: 740px;
+        padding: 50px 0;
+    }
+    .knowledge-section h1{
+        margin: 6px 0;
+    }
+    .knowledge-section-div{
+        margin: 30px 0;
+    }
+    .knowledge-section-div h3{
+        margin: 15px 0 0 0;
+    }
+    .progress-chart{
+        height: 35px;
+        margin: 20px 0 0 0;
+    }
+    .progress-chart h6{
+        margin: 0 0 10px 0;
+    }
+
+/*---------------------------- Education ----------------------------*/
+    .education-section{
+        width: 900px;
+    }
+    .education-section h1{
+        margin: 6px 0;
+    }
+    .education-section-div{
+        margin: 30px 0;
+        width: auto;
+    }
+    .education-section-left,
+    .education-section-right{
+        width: 400px;
+        height: 430px;
+        padding: 20px;
+        display: block;
+    }
+    
+/*---------------------------- Contact ----------------------------*/
+    .contact-section{
+        width: 740px;
+        padding: 100px 0 100px 0;
+    }
+    .contact-section h1{
+        margin: 6px 0;
+    }
+    .contact-section-div{
+        margin: 10px 0;
+    }
+    .contact-section-div li{
+        margin: 10px 0;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .contact-section-div li I{
+        margin-right: 8px;
+    }
+    .contact-section-div .phone{
+        margin-left: 12px;
+        font-weight: 300;
+    }
+    .contact-section-div .mail{
+        margin-left: 40px;
+        font-weight: 300;
+    }
+    .contact-section-div .location{
+        margin-left: 14px;
+        font-weight: 300;
+    }
+}
+
+/* ============================================ 1000 px ============================================ */
+
+@media screen and (max-width: 1000px) {
+    /* ---------------------------- Header ---------------------------- */
+    header{
+        width: 81px;
+        padding: 30px 10px 10px 10px;
+    }
+    .side-nav i{
+        margin-right: 10px;
+        padding-left: 10px;
+    } 
+    .side-nav a{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .side-nav ul li{
+        display: flex;
+        justify-content: center;
+    }
+    .side-nav ul span{
+        display: none;
+    }
+    .side-footer{
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .side-footer ul{
+        flex-direction: column;
+    }
+    .side-footer li{
+        align-items: center;
+        flex-direction: column;
+    }
+    .side-footer a{
+        margin: 0px 0px 10px 10px;
+    }
+    .side-footer a:hover{
+        color: #bdc4cf;
+        box-shadow: -3px -3px 7px #2b2e3365, 3px 3px 7px #14151860;
+    }
+    .side-footer a:active{
+        color: #00faed;
+        box-shadow: -2px -2px 6px #2b2e3365, 2px 2px 6px #14151860;
+    }
+    
+/*---------------------------- Main ---------------------------- */
+    .main{
+        width: 100% calc(-80px);
+        margin-left: 80px;
+    }
+    
+/*---------------------------- About me ----------------------------*/
+    .about-section{
+        width: 700px;
+        height: 900px;
+        padding: 40px 0;
+    }
+    .about-section-div{
+        margin: 30px 0;
+    }
+    .about-section-div h1{
+        margin: 5px 0;
+    }
+    .about-section-div h3{
+        margin: 5px 0;
+    }
+    .about-section-div a{
+        width: 90px;
+        height: 30px;
+    }
+    .about-section-div a:hover{
+        box-shadow: -3px -3px 7px #2b2e3365, 3px 3px 7px #14151860;
+    }
+    .about-section-div a:active{
+        color: #00faed;
+        box-shadow: -1px -1px 5px #2b2e3365, 1px 1px 5px #14151860;
+    }
+
+    /*---------------------------- Knowledge ----------------------------*/
+    .knowledge-section{
+        width: 650px;
+        height: 700px;
+        padding: 70px 0;
+    }
+    .knowledge-section h1{
+        margin: 5px 0;
+    }
+    .knowledge-section-div{
+        margin: 30px 0;
+    }
+    .knowledge-section-div h3{
+        margin: 13px 0 0 0;
+    }
+    .progress-chart h6{
+        margin: 0 0 5px 0;
+    }
+    
+/*---------------------------- Education ----------------------------*/
+    .education-section{
+        width: 700px;
+        padding: 40px 0px 70px 0px;
+    }
+    .education-section-div{
+        width: auto;
+    }
+    .education-section h1{
+        margin: 5px 0;
+    }
+    .education-section-left,
+    .education-section-right{
+        width: 350px;
+        height: 550px;
+        border-radius: 10px;
+    }
+
+/*---------------------------- Contact ----------------------------*/
+    .contact-section{
+        width: 650px;
+        padding: 100px 0 100px 0;
+    }
+}
+
+
+/* ============================================ 800 px ============================================ */
+
+@media screen and (max-width: 800px) {
+    
+/*---------------------------- About me ----------------------------*/
+    .about-section{
+        width: 450px;
+        height: 700px;
+    }
+
+/*---------------------------- Knowledge ----------------------------*/
+    .knowledge-section{
+        width: 450px;
+    }
+    .knowledge-section-div{
+        flex-direction: column;
+        width: 350px;
+        align-items: center;
+    }
+    .progress-chart{
+        width: 60%;
+    }
+
+/*---------------------------- Education ----------------------------*/
+    .education-section{
+        width: 500px;
+    }
+    .education-section h1{
+        text-align: center;
+    }
+    .education-section-div{
+        flex-direction: column;
+        align-items: center;
+    }
+    .education-section-left,
+    .education-section-right{
+        width: 100%;
+        height: 400px;
+    }
+
+    /*---------------------------- Contact ----------------------------*/
+    .contact-section{
+        width: 500px;
+    }
+    .contact-section h1{
+        margin: 5px 0;
+    }
+    .contact-section-div .mail{
+        margin-left: 40px;
+        font-weight: 300;
+    }
+}
+
+/* ============================================ 550 px ============================================ */
+
+@media screen and (max-width: 550px) {
+
+/*---------------------------- Humb ---------------------------- */
+.humb-div{
+    width: 100%;
+    height: 60px;
+    padding: 10px 20px;
+    background-color: #212428;
+    box-shadow: rgba(0, 0, 0, 0.15) 3px 3px 4px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+}
+.humb-div img{
+    width: 40px;
+    border-radius: 50%;
+}
+.humb{
+    display: flex;
+    justify-content: center;
+    width: 16px;
+}
+.humb-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 14px;
+}
+
+
+/* ---------------------------- Header ---------------------------- */
+header{
+    width: 81px;
+    padding: 30px 10px 10px 10px;
+    z-index: 3;
+    transition: 0.5s;
+    height: 100%;
+}
+.side-nav i{
+    margin-right: 10px;
+    padding-left: 10px;
+} 
+.side-nav a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.side-nav ul li{
+    display: flex;
+    justify-content: center;
+}
+.side-nav ul span{
+    display: none;
+}
+.side-footer{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.side-footer ul{
+    flex-direction: column;
+}
+.side-footer li{
+    align-items: center;
+    flex-direction: column;
+}
+.side-footer a{
+    margin: 0 0 10px 10px;
+}
+.side-footer a:hover{
+    color:  #bdc4cf;
+    box-shadow: -3px -3px 7px #2b2e3365, 3px 3px 7px #14151860;
+}
+.side-footer a:active{
+    color: #00faed;
+    box-shadow: -2px -2px 5px #2b2e3365, 2px 2px 5px #14151860;
+}
+/*---------------------------- Main ---------------------------- */
+    .main{
+        width: 150%;
+        margin-left: 0;
+    }
+
+/*---------------------------- About me ----------------------------*/
+    .about-section{
+        width: 100%;
+        height: 800px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .about-section-div h1{
+        text-align: center;
+    }
+    .about-section-div h3{
+        text-align: center;
+    }
+
+/*---------------------------- Knowledge ----------------------------*/
+    .knowledge-section{
+        width: 100%;
+        text-align: center;
+    }
+
+/*---------------------------- Education ----------------------------*/
+    .education-section{
+        width: 100%;
+        padding-top: 100px;
+    }
+    .education-section-left,
+    .education-section-right{
+        height: auto;
+        padding-bottom: 30px;
+        width: 100%;
+    }
+
+/*---------------------------- Contact ----------------------------*/
+    .contact-section{
+        width: 100%;
+    }
+    .contact-section-div .phone,
+    .contact-section-div .location{
+        margin-left: 1px;
+    }
+    .contact-section-div .mail{
+        margin-left: 10px;
+    }  
+    .contact-list{
+        font-size: large !important;
+        padding-left: 2.5rem;
+    }
+}
