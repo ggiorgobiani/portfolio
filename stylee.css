@@ -163,9 +163,15 @@ header{
     margin: 10px 0;
 }
 .knowledge-section-div{
+    width: 100%;
     margin: 50px 0;
     display: flex;
+    justify-content: space-between; 
+}
+.knowledge-section-div-left,
+.knowledge-section-div-right{
     width: 47%;
+    display: flex;
     flex-direction: column;
 }
 .knowledge-section-div h3{
@@ -345,6 +351,10 @@ header{
     .knowledge-section-div{
         margin: 30px 0;
     }
+    .knowledge-section-div-left,
+    .knowledge-section-div-right{
+        width: 47%;
+    }
     .knowledge-section-div h3{
         margin: 15px 0 0 0;
     }
@@ -493,8 +503,7 @@ header{
     /*---------------------------- Knowledge ----------------------------*/
     .knowledge-section{
         width: 650px;
-        height: 700px;
-        padding: 70px 0;
+        padding: 40px 0;
     }
     .knowledge-section h1{
         margin: 5px 0;
@@ -546,14 +555,22 @@ header{
     }
 
 /*---------------------------- Knowledge ----------------------------*/
-    .knowledge-section{
-        width: 450px;
-    }
-    .knowledge-section-div{
-        flex-direction: column;
-        width: 350px;
-        align-items: center;
-    }
+.knowledge-section{
+    width: 400px;
+}
+.knowledge-section-div{
+    flex-direction: column;
+}
+.knowledge-section-div-left,
+.knowledge-section-div-right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.knowledge-section-div-left{
+    margin-bottom: 60px;
+}
     .progress-chart{
         width: 60%;
     }
@@ -692,13 +709,14 @@ header{
     }
 
 /*---------------------------- Knowledge ----------------------------*/
-    .knowledge-section{
-        width: 100%;
-        text-align: center;
-    }
-
+.knowledge-section-div-left,
+.knowledge-section-div-right{
+    align-items: center;
+}
+  
 /*---------------------------- Education ----------------------------*/
-    .education-section{
+    
+    .education-section-div{
         width: 100%;
         padding-top: 100px;
     }
